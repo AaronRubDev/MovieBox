@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#424242</color> <!-- Gris oscuro -->
+    <color name="accentColor">#FFC107</color>  <!-- Amarillo -->
+    <color name="backgroundColor">#303030</color> <!-- Gris oscuro de fondo -->
+    <color name="textColor">#FFFFFF</color> <!-- Blanco -->
+    <color name="textColorSecondary">#BDBDBD</color> <!-- Gris claro -->
+    <color name="progressColor">#4CAF50</color> <!-- Verde -->
+
+    <color name="white">#FFFFFF</color> <!-- Blanco -->
+    <color name="gray">#7E7E7E</color> <!-- Gris claro -->
 </resources>
