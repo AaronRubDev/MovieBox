@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MovieBox</string>
+    <string name="app_movie_box_title">MOVIEBOX</string>
+    <string name="actual_movie_playing">Actual movie playing</string>
+    <string name="most_popular_title">Most Popular</string>
+    <string name="movie_poster_selected">Movie poster selected</string>
+    <string name="icon_add">Icon add to wishlist</string>
+    <string name="add_to_wishlist_icon_description">Add to wishlist icon</string>
+    <string name="wishlist_status_text">Add to Wishlist</string>
+    <string name="movies_poster">Movies poster</string>
+    <string name="app_title">MOVIEBOX</string>
+    <string name="playing_now_label">Playing now</string>
+    <string name="most_popular_label">Most Popular</string>
+    <string name="iv_playing_now_description">Playing now movie poster</string>
+    <string name="home">Home</string>
+    <string name="my_list">My Wishlist</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wishlist_label">My Wishlist</string>
 </resources>
