@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E9000000"
+    android:clickable="true">
+
+    <View
+        android:id="@+id/toolbarView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbarView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/icon_back_to_home_screen"
+        android:src="@drawable/ic_back"
+        app:tint="@color/white" />
 
     <ImageView
         android:id="@+id/ivPosterMovieDetails"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:layout_below="@id/back"
         android:contentDescription="@string/movie_poster_selected"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_movie_placeholder"
-        app:tint="@color/white" />
+        tools:src="@drawable/ic_movie_placeholder" />
 
     <TextView
         android:id="@+id/tvMovieTitleDetails"
@@ -21,11 +39,11 @@
         android:layout_below="@id/ivPosterMovieDetails"
         android:layout_marginStart="16dp"
         android:layout_marginTop="14dp"
+        tools:text="Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="20sp"
-        android:textStyle="bold"
-        tools:text="Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvReleaseDateDetails"
@@ -34,9 +52,9 @@
         android:layout_below="@id/tvMovieTitleDetails"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
+        tools:text="05 February 2020"
         android:textColor="@color/textColorSecondary"
-        android:textSize="14sp"
-        tools:text="05 February 2020" />
+        android:textSize="14sp" />
 
 
     <LinearLayout
@@ -53,19 +71,20 @@
             android:id="@+id/tvOverviewLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/overview_label"
             android:textColor="@color/textColor"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Overview" />
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tvOverviewDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:maxLines="5"
+            tools:text="Harley Quinn joins forces with a singer,ashgdashjgvdjhasbdsaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddhjbasjhdgashgdasdhjgashgdsgdjaghsjhsdghasgdjhsgadhasjdgsahdghasjgdagdasfhasfjash"
             android:textColor="@color/textColorSecondary"
-            android:textSize="14sp"
-            tools:text="Harley Quinn joins forces with a singer,ashgdashjgvdjhasbdsaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddhjbasjhdgashgdasdhjgashgdsgdjaghsjhsdghasgdjhsgadhasjdgsahdghasjgdagdasfhasfjash" />
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,18 +100,18 @@
                 app:cardCornerRadius="10dp">
 
                 <TextView
-                    android:id="@+id/tvLabel1"
+                    android:id="@+id/tvLabelGender1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="8dp"
-                    android:textColor="@android:color/black"
-                    tools:text="Action" />
+                    android:text="Action"
+                    android:textColor="@android:color/black" />
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvLabelGender2"
+                android:id="@+id/tvLabelGender2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -104,8 +123,8 @@
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="8dp"
-                    android:textColor="@android:color/black"
-                    tools:text="Crime" />
+                    android:text="Crime"
+                    android:textColor="@android:color/black" />
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -150,5 +169,4 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
 </RelativeLayout>
