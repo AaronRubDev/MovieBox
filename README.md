@@ -1,6 +1,6 @@
 ![Aaron Rubi Banner](https://github.com/user-attachments/assets/7321a567-7cb7-4210-b314-14c427210326)
 
-<h1 align="center">To Do App 📝 </h1>
+<h1 align="center"> MovieBox </h1>
 
 <br>
 
